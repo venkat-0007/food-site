@@ -13,6 +13,7 @@ steps:
       - '--platform=managed'
       - '--region=us-central1'  # Replace with your desired region
       - '--port=5000'  # Set the port to 5000
+      - '--allow-unauthenticated'  # Allow unauthenticated invocations
+
 options:
   logging: CLOUD_LOGGING_ONLY
-
