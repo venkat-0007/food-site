@@ -14,5 +14,4 @@ steps:
       - '--region=us-central1'  # Replace with your desired region
       - '--port=5000'  # Set the port to 5000
 options:
-  logging:  # Specify the Cloud Storage bucket for logs
-    - 'gs://cloud-build-1'
+  logging: 'gs://cloud-build-1'  # Specify the Cloud Storage bucket for logs as a string, not an array
