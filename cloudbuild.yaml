@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/axial-module-393809/github.com/food-site:v1', '.']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/axial-module-393809/food-site-repo/food-site:v1', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/axial-module-393809/github.com/food-site:v1']
+  args: ['push', 'us-central1-docker.pkg.dev/axial-module-393809/food-site-repo/food-site:v1']
