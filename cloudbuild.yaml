@@ -13,3 +13,6 @@ steps:
       - '--platform=managed'
       - '--region=us-central1'  # Replace with your desired region
       - '--port=5000'  # Set the port to 5000
+options:
+  logging:  # Specify the Cloud Storage bucket for logs
+    - 'gs://cloud-build-1'
