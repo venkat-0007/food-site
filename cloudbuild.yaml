@@ -6,14 +6,14 @@ steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'gcloud'
     args:
-      - 'run'  # Use the 'run' command to deploy to Cloud Run
-      - 'deploy'  # Deploy a new revision
-      - 'food-site-service'  # Replace with your Cloud Run service name
-      - '--image=us-central1-docker.pkg.dev/axial-module-393809/food-site-repo/food-site:v1'  # Image URL
+      - 'run'  
+      - 'deploy'  
+      - 'food-site-service'  
+      - '--image=us-central1-docker.pkg.dev/axial-module-393809/food-site-repo/food-site:v1'  
       - '--platform=managed'
-      - '--region=us-central1'  # Replace with your desired region
-      - '--port=5000'  # Set the port to 5000
-      - '--allow-unauthenticated'  # Allow unauthenticated invocations
+      - '--region=us-central1'  
+      - '--port=5000'  
+      - '--allow-unauthenticated'  
 
 options:
   logging: CLOUD_LOGGING_ONLY
