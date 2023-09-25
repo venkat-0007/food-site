@@ -19,3 +19,6 @@ steps:
       - 'k8s/'  
 
 images: ['gcr.io/cloud-builders/docker', 'gcr.io/google.com/cloudsdktool/cloud-sdk']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
